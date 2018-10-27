@@ -1,4 +1,4 @@
-# Ansible Demo for MetaNook 2018
+# Ansible Demo Playbook
 
 ## How to setup
 
