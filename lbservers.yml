@@ -1,0 +1,6 @@
+---
+- hosts: lbservers
+  become: true
+  roles:
+    - common
+    - lbserver

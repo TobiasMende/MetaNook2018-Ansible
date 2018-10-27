@@ -1,0 +1,6 @@
+---
+# Requirements of this playbook.
+# use ansible-galaxy install -r requirements.yml
+
+- include: roles/dbserver/requirements.yml
+- include: roles/appserver/requirements.yml

@@ -1,0 +1,12 @@
+---
+# tasks file for lbserver
+
+- name: Install Latest Nginx
+  apt: name=nginx state=latest
+  notify: restart nginx
+
+- name: Configure Loadbalancer
+  template:
+    src: templates/loadbalancer.conf.j2
+    dest: "/etc/nginx/sites-enabled/default"
+  notify: restart nginx

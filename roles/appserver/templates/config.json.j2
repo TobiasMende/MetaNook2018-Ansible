@@ -1,0 +1,11 @@
+{
+    "hostname": "{{ ansible_hostname }}",
+    "port": 80,
+    "db": {
+        "hostname": "{{ groups.dbservers[0] }}",
+        "port": 3306,
+        "user": "{{ database_user }}",
+        "password": "{{ database_password }}",
+        "database": "{{ database_name }}"
+    }
+}

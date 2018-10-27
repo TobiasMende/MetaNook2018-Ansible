@@ -1,0 +1,6 @@
+---
+# handlers file for appserver
+
+- name: restart app
+  debug:
+    msg: "Will restart"

@@ -1,0 +1,21 @@
+---
+# tasks file for dbserver
+
+- name: Print Hello World
+  debug:
+    msg: '{{ mysql_users }}'
+
+- include_role: 
+    name: geerlingguy.mysql
+
+- copy:
+    src: files/table.sql
+    dest: /tmp
+
+- name: Create Table If Not Existing
+  mysql_db:
+    name: '{{ database_name }}'
+    login_user: '{{ database_user }}'
+    login_password: '{{ database_password }}'
+    state: import
+    target: /tmp/table.sql

@@ -1,0 +1,14 @@
+
+upstream appserver {
+    {% for svr in groups.appservers %}
+    server {{ svr }};
+    {% endfor %}
+}
+
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://appserver;
+    }
+}

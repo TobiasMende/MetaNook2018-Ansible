@@ -1,0 +1,3 @@
+---
+# defaults file for appserver
+app_path: /var/www/nodejs/app

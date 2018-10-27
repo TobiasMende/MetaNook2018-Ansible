@@ -1,0 +1,20 @@
+---
+# vars file for dbserver
+# See https://galaxy.ansible.com/geerlingguy/mysql
+
+mysql_user_home: /root
+mysql_user_name: '{{ database_root_user }}'
+mysql_user_password: '{{ database_root_password }}'
+
+mysql_enabled_on_startup: true
+
+mysql_databases:
+  - name: '{{ database_name }}'
+
+mysql_users:
+  - name: '{{ database_user }}'
+    password: '{{ database_password }}'
+    priv: '*.*:ALL,GRANT'
+    host: '%'
+
+mysql_bind_address: '0.0.0.0'

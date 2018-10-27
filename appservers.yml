@@ -1,0 +1,6 @@
+---
+- hosts: appservers
+  become: true
+  roles:
+    - common
+    - appserver
