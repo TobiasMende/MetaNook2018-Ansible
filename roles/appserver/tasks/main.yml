@@ -39,7 +39,8 @@
 - name: Check pm2
   shell: pm2 ls | grep -q myapp
   register: app_exists
-  failed_when: false
+  failed_when: app_exists.rc > 1
+  changed_when: false
 
 - name: Delete old pm2 process
   command: pm2 delete myapp
