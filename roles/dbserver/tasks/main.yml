@@ -5,6 +5,10 @@
   debug:
     msg: '{{ mysql_users }}'
 
+- name: Create user for mysql
+  user:
+    name: '{{ mysql_user_name }}'
+
 - include_role: 
     name: geerlingguy.mysql
 
