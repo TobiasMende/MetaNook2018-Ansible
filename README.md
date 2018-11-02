@@ -1,4 +1,16 @@
-# Ansible Demo Playbook
+# MetaNook 2018 Ansible Playbook
+
+## TL;DR
+
+This is a demo Ansible playbook. View the presentation [here](https://tobiasmende.github.io/MetaNook2018-Ansible-Slides/).
+
+## Context
+
+This repository is part of the material I use in my Ansible Session at [MetaNook 2018](https://metanook.de/2018).
+Please be aware of the following repositories, as well:
+
+* [RevealJS Slides](https://github.com/TobiasMende/MetaNook2018-Ansible-Slides)
+* [Node JS Demo App](https://github.com/TobiasMende/MetaNook2018-Ansible-App)
 
 ## How to setup
 
