@@ -14,7 +14,7 @@ Please be aware of the following repositories, as well:
 
 ## How to setup
 
-Vagrant is used for demonstration puposed. Thus run `vagrant up` to spin up the infrastructure.
+[Vagrant](https://www.vagrantup.com) is used for demonstration purposes. Thus run `vagrant up` to spin up the infrastructure.
 
 ## Install Playbook Dependencies
 
